@@ -1,0 +1,25 @@
+[project]
+name = "introducao-ao-deep-learning"
+version = "0.1.0"
+description = "Ambiente virtual para a lição da aula Introdução ao Deep Learning ministrada pelo prof. Jerônymo"
+authors = [
+    {name = "Fernanda Prado",email = "fehfeprado@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "numpy (>=2.2.3,<3.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.3.2"
+
